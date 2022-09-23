@@ -9,7 +9,13 @@
 <body>
     
     <div class = "content">
-        <div class = "image"></div>
+        <div class = "picdiv">
+            <div class="logobackground">
+                <img src="./images/globe.svg" alt="French Logo" class="logo" style="opacity: 1;">
+                <h1 class="logowords">French</h1>
+            </div>
+        </div>
+        
         
         
         <div class="right">
@@ -17,10 +23,52 @@
                 <p>This is not a real online service! But imagine if you will that this was an actual website where you would go to to learn French... That would be pretty cool, wouldn't it?</p>
                 <p>Vous <em>savez</em> que vous voulez vous inscrire !</p>
             </div>
+            
             <form action="#" class = "myform">
-                <p>C'est parti !</p>
+                <p class = "formtitle">Let's go!</p>
+                <div class = "inputsection">
+                    <div class="input">
+                        <label for="first_name">First Name</label>
+                        <input type="text" name="first_name" id="first_name">
+                    </div>
+
+                    <div class="input">
+                        <label for="last_name">Last Name</label>
+                        <input type="text" name="last_name" id="last_name">
+                    </div>
+
+                    <div class="input">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+
+                    <div class="input">
+                        <label for="phone_number">Phone Number</label>
+                        <input type="text" name="phone_number" id="phone_number">
+                    </div>
+
+                    <div class="input">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password">
+                    </div>
+
+                    <div class="input">
+                        <label for="confirm_password">Confirm Password</label>
+                        <input type="password" name="confirm_password" id="confirm_password">
+                    </div>
+                </div>
+            
+                
             </form>
-            <div class = "login"></div>
+            
+           <div class = "buttondiv">
+            <button class="createaccount">Create Account</button>
+           </div> 
+            
+            <div class = "login">
+                <p>Already have an account?</p>
+                <a href="#">Log in</a>
+            </div>
         </div>
     </div>
         
