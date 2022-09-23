@@ -12,11 +12,9 @@
         <div class = "picdiv">
             <div class="logobackground">
                 <img src="./images/globe.svg" alt="French Logo" class="logo" style="opacity: 1;">
-                <h1 class="logowords">French</h1>
+                <h1 class="logowords">FrLang</h1>
             </div>
-        </div>
-        
-        
+        </div>        
         
         <div class="right">
             <div class = "toptext">
@@ -24,46 +22,47 @@
                 <p>Vous <em>savez</em> que vous voulez vous inscrire !</p>
             </div>
             
-            <form action="#" class = "myform">
+            <form action="#" class = "myform" method="get">
                 <p class = "formtitle">Let's go!</p>
+                <p class = "formboxshadow"></p>
                 <div class = "inputsection">
                     <div class="input">
-                        <label for="first_name">First Name</label>
-                        <input type="text" name="first_name" id="first_name">
+                        <label for="first_name">*First Name</label>
+                        <input type="text" name="first_name" id="first_name" required>
                     </div>
 
                     <div class="input">
-                        <label for="last_name">Last Name</label>
-                        <input type="text" name="last_name" id="last_name">
+                        <label for="last_name">*Last Name</label>
+                        <input type="text" name="last_name" id="last_name" required>
                     </div>
 
                     <div class="input">
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id="email">
+                        <label for="email">*Email</label>
+                        <input type="email" name="email" id="email" required>
                     </div>
 
                     <div class="input">
-                        <label for="phone_number">Phone Number</label>
-                        <input type="text" name="phone_number" id="phone_number">
+                        <label for="phone_number">*Phone Number</label>
+                        <input type="text" name="phone_number" id="phone_number" pattern="(\d{9}([\-]\d{4})?)" title="Example: 515719214" required>
                     </div>
 
-                    <div class="input">
-                        <label for="password">Password</label>
-                        <input type="password" name="password" id="password">
+                    <div class="input" id="ogpassword">
+                        <label for="password">*Password</label>
+                        <input type="password" name="password" id="password" required>
                     </div>
 
-                    <div class="input">
-                        <label for="confirm_password">Confirm Password</label>
-                        <input type="password" name="confirm_password" id="confirm_password">
+                    <div class="input" id="cfpassword">
+                        <label for="confirm_password">*Confirm Password</label>
+                        <input type="password" name="confirm_password" id="confirm_password" required>
                     </div>
                 </div>
             
-                
+                <div class = "buttondiv">
+                    <button class="createaccount">Create Account</button>
+                </div> 
             </form>
             
-           <div class = "buttondiv">
-            <button class="createaccount">Create Account</button>
-           </div> 
+           
             
             <div class = "login">
                 <p>Already have an account?</p>
